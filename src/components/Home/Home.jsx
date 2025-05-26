@@ -66,7 +66,7 @@ const Banner = () => {
             cutting-edge solutions that add value to our clients and
             communities.
           </p>
-          <button className="about_button">See more</button>
+          <a href="/futter" className="about_button">See more</a>
         </div>
       </div>
       <div className="baner_img">
@@ -155,6 +155,15 @@ const Banner = () => {
           src={Mission}
           alt="Team working on whiteboard"
         />
+      </div>
+      <div className="progress-container">
+        {/* <h2>Медленный прогресс-бар</h2> */}
+        <div className="progress-bar-bg">
+          <div
+            className="progress-bar-fill"
+            style={{ width: `${width}%` }}
+          ></div>
+        </div>
       </div>
       {/* //////////////////////////// */}
       <div className="Services">
