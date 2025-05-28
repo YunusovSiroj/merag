@@ -2,5 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 *{
-    /* background: rgb(231, 237, 225); */
+    /* background: rgb(231, 237, 225);
+    position: relative;
+    z-index: -10; */
+    
+}
+body {
+  background-color: rgb(249 249 249 / var(--tw-bg-opacity, 1));
 }

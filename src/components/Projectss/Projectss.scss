@@ -1,0 +1,20 @@
+.project-slider__title{
+    margin-top: 20px;
+    
+    font-size: 32px;
+    font-weight: 600;
+}
+.project-slider{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-slider_sa{
+    padding: 22px;
+    background-color: aqua;
+    height: 40px;
+    width: 70px;
+    display: flex;
+}

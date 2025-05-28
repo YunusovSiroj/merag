@@ -57,7 +57,7 @@
 }
 
 .banner-title {
-  margin-top: 450px;
+  margin-top: 150px;
   font-size: 56px;
   width: 40%;
   margin-left: 5%;
@@ -147,9 +147,16 @@
     margin: 50px 5%;
     flex-wrap: wrap;
 
+    .asd {
+      flex: 1 1 calc(33.333% - 13.33px);
+      display: block; // делаем ссылку блочным элементом
+      text-decoration: none;
+      color: inherit;
+    }
+
     .What_baner {
       position: relative;
-      width: calc(33.333% - 13.33px); // 3 карточки в ряд
+      width: 100%;
       overflow: hidden;
       border-radius: 10px;
       cursor: pointer;
@@ -170,8 +177,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 20px;
-        opacity: 0;
-        opacity: 1;
+        // opacity: 0;
         transition: opacity 0.4s ease;
 
         .What_button {
@@ -216,12 +222,14 @@
           transform: scale(1.05);
         }
 
-        .What_button{
+        .What_hover {
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.5);
+        }
+
+        .What_button {
           background: #14433d;
           color: white;
-        } .What_hover {
-          opacity: 1;
-          background: #00000082;
         }
       }
     }

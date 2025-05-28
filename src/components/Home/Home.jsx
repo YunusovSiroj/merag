@@ -14,7 +14,7 @@ import map from "../../assets/ener/map.png";
 import Environmental from "../../assets/ener/Environmental.png";
 import Governance from "../../assets/ener/Governance.png";
 import Frame63 from "../../assets/ener/Frame 63.png";
-import Futter from "../futter/futter"
+import Futter from "../futter/futter";
 const Banner = () => {
   const [width, setWidth] = useState(0);
 
@@ -50,6 +50,7 @@ const Banner = () => {
           <h1 className="banner-title">OUR EXPERIENCE IS YOUR SUCCESS</h1>
         </div>
       </div>
+      {/* ///////////////////////////////// */}
       <div className="about_us">
         <h1 className="about_h1">About Us</h1>
         <div className="about_uss">
@@ -66,9 +67,12 @@ const Banner = () => {
             cutting-edge solutions that add value to our clients and
             communities.
           </p>
-          <a href="/futter" className="about_button">See more</a>
+          <a href="/about" className="about_button">
+            See more
+          </a>
         </div>
       </div>
+      {/* /////////////////////////////////// */}
       <div className="baner_img">
         <img className="baner_bg" src={fon} alt="Background" />
         <div className="baner_overlay">
@@ -90,47 +94,53 @@ const Banner = () => {
       <div className="What_oll">
         <h1 className="What_text">What we do</h1>
         <div className="What_baner_oll">
-          <div className="What_baner">
-            <img className="What_img" src={Engineering} alt="Engineering" />
-            <div className="What_hover">
-              <button className="What_button">→</button>
-              <div className="What_olltext">
-                <h2 className="What_text2">Engineering</h2>
-                <p className="What_p">
-                  MIMAR offers design solutions taking into account modern
-                  technologies and customer requirements.
-                </p>
+          <a className="asd" href="/Engineering">
+            <div className="What_baner">
+              <img className="What_img" src={Engineering} alt="Engineering" />
+              <div className="What_hover">
+                <button className="What_button">→</button>
+                <div className="What_olltext">
+                  <h2 className="What_text2">Engineering</h2>
+                  <p className="What_p">
+                    MIMAR offers design solutions taking into account modern
+                    technologies and customer requirements.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className="What_baner">
-            <img className="What_img" src={Procurement} alt="Procurement" />
-            <div className="What_hover">
-              <button className="What_button">→</button>
-              <div className="What_olltext">
-                <h2 className="What_text2">Procurement</h2>
-                <p className="What_p">
-                  We ensure the timely supply of quality materials to meet the
-                  needs of each project.
-                </p>
+          <a className="asd" href="/Engineering">
+            <div className="What_baner">
+              <img className="What_img" src={Procurement} alt="Procurement" />
+              <div className="What_hover">
+                <button className="What_button">→</button>
+                <div className="What_olltext">
+                  <h2 className="What_text2">Procurement</h2>
+                  <p className="What_p">
+                    We ensure the timely supply of quality materials to meet the
+                    needs of each project.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className="What_baner">
-            <img className="What_img" src={Construction} alt="Construction" />
-            <div className="What_hover">
-              <button className="What_button">→</button>
-              <div className="What_olltext">
-                <h2 className="What_text2">Construction</h2>
-                <p className="What_p">
-                  Our team provides full construction services from planning to
-                  execution with high standards.
-                </p>
+          <a className="asd" href="">
+            <div className="What_baner">
+              <img className="What_img" src={Construction} alt="Construction" />
+              <div className="What_hover">
+                <button className="What_button">→</button>
+                <div className="What_olltext">
+                  <h2 className="What_text2">Construction</h2>
+                  <p className="What_p">
+                    Our team provides full construction services from planning
+                    to execution with high standards.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
@@ -413,7 +423,7 @@ const Banner = () => {
         </div>
       </div>
       {/* .......................... */}
-      <Futter/>
+      <Futter />
     </section>
   );
 };
